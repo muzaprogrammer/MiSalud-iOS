@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1uT-j8-ay5">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DatosGeneralesController-->
+        <scene sceneID="3lZ-6t-6tF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DatosGenerales" referencedIdentifier="DatosGeneralesController" id="2el-3z-H15" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82W-4r-RX4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-68" y="-428"/>
+        </scene>
+        <!--MI PERFIL-->
+        <scene sceneID="QQp-kV-mfb">
+            <objects>
+                <viewController storyboardIdentifier="PerfilController" id="1uT-j8-ay5" customClass="PerfilController" customModule="Mi_Salud" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VPY-1f-muK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuT-97-QA5">
+                                <rect key="frame" x="21" y="68" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="datosGeneralesButton"/>
+                                <connections>
+                                    <segue destination="2el-3z-H15" kind="show" id="LGW-vW-hus"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TA3-VS-Lwq">
+                                <rect key="frame" x="21" y="198" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="consultasButton"/>
+                                <connections>
+                                    <segue destination="NhZ-cQ-nZq" kind="show" id="Til-SK-Qjr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJ7-oN-BMo">
+                                <rect key="frame" x="21" y="328" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="documentosButton"/>
+                                <connections>
+                                    <segue destination="pkd-Rh-t0H" kind="show" id="LW9-7C-qcu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfh-qi-Kxs">
+                                <rect key="frame" x="159" y="328" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="laboratorioButton"/>
+                                <connections>
+                                    <segue destination="fnI-mZ-bO6" kind="show" id="TVk-fC-Sd1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QA7-Sf-Obk">
+                                <rect key="frame" x="159" y="68" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="estadoCuentaButton"/>
+                                <connections>
+                                    <segue destination="KGV-Ey-3Fw" kind="show" id="Uq5-8S-eVD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nM0-bZ-8S6">
+                                <rect key="frame" x="159" y="198" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="recetasButton"/>
+                                <connections>
+                                    <segue destination="UNH-Ea-2Os" kind="show" id="le9-eu-r6K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="URW-BE-ATW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="MI PERFIL" id="hnc-8X-tIa">
+                        <barButtonItem key="rightBarButtonItem" title="Salir" id="P5F-1u-n5u">
+                            <connections>
+                                <action selector="evento_cerrar_sesion:" destination="1uT-j8-ay5" id="ugJ-DW-Pxi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sZv-rh-rWA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56" y="32"/>
+        </scene>
+        <!--CuentasController-->
+        <scene sceneID="HPj-I8-7lP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Cuentas" referencedIdentifier="CuentasController" id="KGV-Ey-3Fw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTa-50-ery" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768" y="-173"/>
+        </scene>
+        <!--ConsultasMedicasController-->
+        <scene sceneID="8f2-Js-HdK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ConsultasMedicas" referencedIdentifier="ConsultasMedicasController" id="NhZ-cQ-nZq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wlU-C7-hPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805" y="31"/>
+        </scene>
+        <!--RecetasController-->
+        <scene sceneID="rqX-rl-I6q">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Recetas" referencedIdentifier="RecetasController" id="UNH-Ea-2Os" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIe-XF-qZd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768" y="131"/>
+        </scene>
+        <!--DocumentosController-->
+        <scene sceneID="w63-tA-Pj7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Documentos" referencedIdentifier="DocumentosController" id="pkd-Rh-t0H" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CdC-6u-LlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-292" y="548"/>
+        </scene>
+        <!--EXAMENES LABORATORIO-->
+        <scene sceneID="rYn-96-1Kg">
+            <objects>
+                <viewController storyboardIdentifier="ExamenesLaboratorioController" id="fnI-mZ-bO6" customClass="ExamenesLaboratorioController" customModule="Mi_Salud" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nzw-Ha-uAS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Eo-zp-nPE">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Eo-zp-nPE" firstAttribute="trailing" secondItem="rnj-FE-Zmb" secondAttribute="trailing" id="GFD-LK-cfa"/>
+                            <constraint firstItem="6Eo-zp-nPE" firstAttribute="bottom" secondItem="rnj-FE-Zmb" secondAttribute="bottom" id="WDP-cd-LDt"/>
+                            <constraint firstItem="6Eo-zp-nPE" firstAttribute="leading" secondItem="rnj-FE-Zmb" secondAttribute="leading" id="ggp-3u-He6"/>
+                            <constraint firstItem="6Eo-zp-nPE" firstAttribute="top" secondItem="rnj-FE-Zmb" secondAttribute="top" id="qBN-ID-emP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rnj-FE-Zmb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="EXAMENES LABORATORIO" id="sm3-TJ-Nya"/>
+                    <connections>
+                        <outlet property="tableView" destination="6Eo-zp-nPE" id="HfT-KO-xXC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPZ-hv-f9q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="376.875" y="870"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="consultasButton" width="150" height="150"/>
+        <image name="datosGeneralesButton" width="150" height="150"/>
+        <image name="documentosButton" width="150" height="150"/>
+        <image name="estadoCuentaButton" width="150" height="150"/>
+        <image name="laboratorioButton" width="150" height="150"/>
+        <image name="recetasButton" width="150" height="150"/>
+    </resources>
+</document>

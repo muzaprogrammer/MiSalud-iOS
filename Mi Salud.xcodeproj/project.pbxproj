@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		683746A3211919DB00FD374B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683746A2211919DB00FD374B /* AppDelegate.swift */; };
+		683746A5211919DB00FD374B /* IniciarSesionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683746A4211919DB00FD374B /* IniciarSesionController.swift */; };
+		683746A8211919DB00FD374B /* IniciarSesion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 683746A6211919DB00FD374B /* IniciarSesion.storyboard */; };
+		683746AA211919DF00FD374B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 683746A9211919DF00FD374B /* Assets.xcassets */; };
+		683746AD211919DF00FD374B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 683746AB211919DF00FD374B /* LaunchScreen.storyboard */; };
+		683746D321191D3D00FD374B /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 683746C221191C8600FD374B /* SQLite.framework */; };
+		683746D421191D3D00FD374B /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 683746C221191C8600FD374B /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		683746E8211943A700FD374B /* RecuperarContraseniaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683746E7211943A700FD374B /* RecuperarContraseniaController.swift */; };
+		683746EA2119486F00FD374B /* Utilidades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683746E92119486F00FD374B /* Utilidades.swift */; };
+		683746EC2119495800FD374B /* Uris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683746EB2119495800FD374B /* Uris.swift */; };
+		683746EE21194BD400FD374B /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 683746ED21194BD400FD374B /* MainMenu.storyboard */; };
+		683746F021194C0100FD374B /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683746EF21194C0100FD374B /* MainMenuController.swift */; };
+		686A812A211F281B0095B423 /* Cuentas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686A8129211F281B0095B423 /* Cuentas.storyboard */; };
+		686A8133211F29280095B423 /* CuentasViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A8131211F29280095B423 /* CuentasViewCell.swift */; };
+		686A8134211F29280095B423 /* CuentasViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686A8132211F29280095B423 /* CuentasViewCell.xib */; };
+		686A8136211F2CDF0095B423 /* CuentasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A8135211F2CDF0095B423 /* CuentasController.swift */; };
+		686A8139211F384C0095B423 /* DetallesCuentaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A8138211F384C0095B423 /* DetallesCuentaController.swift */; };
+		686A813B211F43260095B423 /* DetallesCuentaConsumoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A813A211F43260095B423 /* DetallesCuentaConsumoController.swift */; };
+		686A813E211F45E60095B423 /* DetallesCuentaConsumoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686A813C211F45E60095B423 /* DetallesCuentaConsumoViewCell.swift */; };
+		686A813F211F45E60095B423 /* DetallesCuentaConsumoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686A813D211F45E60095B423 /* DetallesCuentaConsumoViewCell.xib */; };
+		686D6514211C15CF0049F67A /* CitasViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D6512211C15CF0049F67A /* CitasViewCell.swift */; };
+		686D6515211C15CF0049F67A /* CitasViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686D6513211C15CF0049F67A /* CitasViewCell.xib */; };
+		686D651D211D36710049F67A /* ReservarCitasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D651C211D36710049F67A /* ReservarCitasController.swift */; };
+		686D651F211D46CA0049F67A /* DetallesCitaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D651E211D46CA0049F67A /* DetallesCitaController.swift */; };
+		686D6521211D4E400049F67A /* ContactanosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D6520211D4E400049F67A /* ContactanosController.swift */; };
+		686D6523211D52810049F67A /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686D6522211D52810049F67A /* Perfil.storyboard */; };
+		686D6525211D53910049F67A /* PerfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D6524211D53910049F67A /* PerfilController.swift */; };
+		686D6527211D57B60049F67A /* DatosGenerales.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686D6526211D57B60049F67A /* DatosGenerales.storyboard */; };
+		686D6529211D59C70049F67A /* DatosGeneralesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D6528211D59C70049F67A /* DatosGeneralesController.swift */; };
+		686D652B211D59E10049F67A /* CambiarContraseniaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D652A211D59E10049F67A /* CambiarContraseniaController.swift */; };
+		686D652D211E47540049F67A /* Documentos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686D652C211E47540049F67A /* Documentos.storyboard */; };
+		686D652F211E47890049F67A /* DocumentosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D652E211E47880049F67A /* DocumentosController.swift */; };
+		686D6531211E488A0049F67A /* DetallesDocumentoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D6530211E488A0049F67A /* DetallesDocumentoController.swift */; };
+		686D6536211E4D830049F67A /* DocumentosViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D6534211E4D830049F67A /* DocumentosViewCell.swift */; };
+		686D6537211E4D830049F67A /* DocumentosViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686D6535211E4D830049F67A /* DocumentosViewCell.xib */; };
+		686D6539211E55280049F67A /* ExamenesLaboratorioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D6538211E55280049F67A /* ExamenesLaboratorioController.swift */; };
+		686D653C211E58540049F67A /* ExamenesLaboratorioViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D653A211E58540049F67A /* ExamenesLaboratorioViewCell.swift */; };
+		686D653D211E58540049F67A /* ExamenesLaboratorioViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686D653B211E58540049F67A /* ExamenesLaboratorioViewCell.xib */; };
+		686D653F211E5E040049F67A /* ConsultasMedicas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686D653E211E5E040049F67A /* ConsultasMedicas.storyboard */; };
+		686D6541211E5F560049F67A /* ConsultasMedicasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D6540211E5F560049F67A /* ConsultasMedicasController.swift */; };
+		686D6543211E5F6C0049F67A /* DetallesConsultasMedicasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D6542211E5F6C0049F67A /* DetallesConsultasMedicasController.swift */; };
+		686D6546211E5FF50049F67A /* ConsultasMedicasViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D6544211E5FF50049F67A /* ConsultasMedicasViewCell.swift */; };
+		686D6547211E5FF50049F67A /* ConsultasMedicasViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686D6545211E5FF50049F67A /* ConsultasMedicasViewCell.xib */; };
+		686D6549211EB4830049F67A /* Recetas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686D6548211EB4830049F67A /* Recetas.storyboard */; };
+		686D654B211EB6870049F67A /* RecetasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D654A211EB6870049F67A /* RecetasController.swift */; };
+		686D654D211EB69A0049F67A /* DetallesRecetaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D654C211EB69A0049F67A /* DetallesRecetaController.swift */; };
+		686D6550211EB8280049F67A /* RecetasViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D654E211EB8280049F67A /* RecetasViewCell.swift */; };
+		686D6551211EB8280049F67A /* RecetasViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686D654F211EB8280049F67A /* RecetasViewCell.xib */; };
+		686D6554211EBDA00049F67A /* DetallesRecetaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D6552211EBDA00049F67A /* DetallesRecetaViewCell.swift */; };
+		686D6555211EBDA00049F67A /* DetallesRecetaViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686D6553211EBDA00049F67A /* DetallesRecetaViewCell.xib */; };
+		68ACD5D6211A73AE006F70B0 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD5D5211A73AE006F70B0 /* Database.swift */; };
+		68ACD5DE211A73DD006F70B0 /* Modelos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD5DD211A73DD006F70B0 /* Modelos.swift */; };
+		68ACD5E0211A743C006F70B0 /* Estructuras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD5DF211A743C006F70B0 /* Estructuras.swift */; };
+		68ACD5E2211A80C9006F70B0 /* Citas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68ACD5E1211A80C9006F70B0 /* Citas.storyboard */; };
+		68ACD5E4211A81A0006F70B0 /* CitasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68ACD5E3211A81A0006F70B0 /* CitasController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		683746C121191C8600FD374B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 683746B721191C8600FD374B /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		683746C321191C8600FD374B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 683746B721191C8600FD374B /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		683746C521191C8600FD374B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 683746B721191C8600FD374B /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		683746C721191C8600FD374B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 683746B721191C8600FD374B /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		683746C921191C8600FD374B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 683746B721191C8600FD374B /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		683746CB21191C8600FD374B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 683746B721191C8600FD374B /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		683746CD21191C8600FD374B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 683746B721191C8600FD374B /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		683746D521191D3D00FD374B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 683746B721191C8600FD374B /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		683746D721191D3D00FD374B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				683746D421191D3D00FD374B /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6837469F211919DB00FD374B /* Mi Salud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi Salud.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		683746A2211919DB00FD374B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		683746A4211919DB00FD374B /* IniciarSesionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionController.swift; sourceTree = "<group>"; };
+		683746A7211919DB00FD374B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/IniciarSesion.storyboard; sourceTree = "<group>"; };
+		683746A9211919DF00FD374B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		683746AC211919DF00FD374B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		683746AE211919DF00FD374B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		683746B521191C6E00FD374B /* SQLite.swift-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SQLite.swift-master"; sourceTree = "<group>"; };
+		683746B721191C8600FD374B /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		683746D021191CBA00FD374B /* SQLite.swift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = SQLite.swift.podspec; path = "SQLite.swift-master/SQLite.swift.podspec"; sourceTree = "<group>"; };
+		683746E7211943A700FD374B /* RecuperarContraseniaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuperarContraseniaController.swift; sourceTree = "<group>"; };
+		683746E92119486F00FD374B /* Utilidades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilidades.swift; sourceTree = "<group>"; };
+		683746EB2119495800FD374B /* Uris.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uris.swift; sourceTree = "<group>"; };
+		683746ED21194BD400FD374B /* MainMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
+		683746EF21194C0100FD374B /* MainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
+		686A8129211F281B0095B423 /* Cuentas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cuentas.storyboard; sourceTree = "<group>"; };
+		686A8131211F29280095B423 /* CuentasViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuentasViewCell.swift; sourceTree = "<group>"; };
+		686A8132211F29280095B423 /* CuentasViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CuentasViewCell.xib; sourceTree = "<group>"; };
+		686A8135211F2CDF0095B423 /* CuentasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuentasController.swift; sourceTree = "<group>"; };
+		686A8138211F384C0095B423 /* DetallesCuentaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesCuentaController.swift; sourceTree = "<group>"; };
+		686A813A211F43260095B423 /* DetallesCuentaConsumoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesCuentaConsumoController.swift; sourceTree = "<group>"; };
+		686A813C211F45E60095B423 /* DetallesCuentaConsumoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesCuentaConsumoViewCell.swift; sourceTree = "<group>"; };
+		686A813D211F45E60095B423 /* DetallesCuentaConsumoViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetallesCuentaConsumoViewCell.xib; sourceTree = "<group>"; };
+		686D6512211C15CF0049F67A /* CitasViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitasViewCell.swift; sourceTree = "<group>"; };
+		686D6513211C15CF0049F67A /* CitasViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitasViewCell.xib; sourceTree = "<group>"; };
+		686D651C211D36710049F67A /* ReservarCitasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservarCitasController.swift; sourceTree = "<group>"; };
+		686D651E211D46CA0049F67A /* DetallesCitaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesCitaController.swift; sourceTree = "<group>"; };
+		686D6520211D4E400049F67A /* ContactanosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactanosController.swift; sourceTree = "<group>"; };
+		686D6522211D52810049F67A /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
+		686D6524211D53910049F67A /* PerfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilController.swift; sourceTree = "<group>"; };
+		686D6526211D57B60049F67A /* DatosGenerales.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DatosGenerales.storyboard; sourceTree = "<group>"; };
+		686D6528211D59C70049F67A /* DatosGeneralesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosGeneralesController.swift; sourceTree = "<group>"; };
+		686D652A211D59E10049F67A /* CambiarContraseniaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CambiarContraseniaController.swift; sourceTree = "<group>"; };
+		686D652C211E47540049F67A /* Documentos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Documentos.storyboard; sourceTree = "<group>"; };
+		686D652E211E47880049F67A /* DocumentosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentosController.swift; sourceTree = "<group>"; };
+		686D6530211E488A0049F67A /* DetallesDocumentoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesDocumentoController.swift; sourceTree = "<group>"; };
+		686D6534211E4D830049F67A /* DocumentosViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentosViewCell.swift; sourceTree = "<group>"; };
+		686D6535211E4D830049F67A /* DocumentosViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentosViewCell.xib; sourceTree = "<group>"; };
+		686D6538211E55280049F67A /* ExamenesLaboratorioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamenesLaboratorioController.swift; sourceTree = "<group>"; };
+		686D653A211E58540049F67A /* ExamenesLaboratorioViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamenesLaboratorioViewCell.swift; sourceTree = "<group>"; };
+		686D653B211E58540049F67A /* ExamenesLaboratorioViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExamenesLaboratorioViewCell.xib; sourceTree = "<group>"; };
+		686D653E211E5E040049F67A /* ConsultasMedicas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConsultasMedicas.storyboard; sourceTree = "<group>"; };
+		686D6540211E5F560049F67A /* ConsultasMedicasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultasMedicasController.swift; sourceTree = "<group>"; };
+		686D6542211E5F6C0049F67A /* DetallesConsultasMedicasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesConsultasMedicasController.swift; sourceTree = "<group>"; };
+		686D6544211E5FF50049F67A /* ConsultasMedicasViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultasMedicasViewCell.swift; sourceTree = "<group>"; };
+		686D6545211E5FF50049F67A /* ConsultasMedicasViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConsultasMedicasViewCell.xib; sourceTree = "<group>"; };
+		686D6548211EB4830049F67A /* Recetas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recetas.storyboard; sourceTree = "<group>"; };
+		686D654A211EB6870049F67A /* RecetasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetasController.swift; sourceTree = "<group>"; };
+		686D654C211EB69A0049F67A /* DetallesRecetaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesRecetaController.swift; sourceTree = "<group>"; };
+		686D654E211EB8280049F67A /* RecetasViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetasViewCell.swift; sourceTree = "<group>"; };
+		686D654F211EB8280049F67A /* RecetasViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecetasViewCell.xib; sourceTree = "<group>"; };
+		686D6552211EBDA00049F67A /* DetallesRecetaViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesRecetaViewCell.swift; sourceTree = "<group>"; };
+		686D6553211EBDA00049F67A /* DetallesRecetaViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetallesRecetaViewCell.xib; sourceTree = "<group>"; };
+		68ACD5D5211A73AE006F70B0 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		68ACD5DD211A73DD006F70B0 /* Modelos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelos.swift; sourceTree = "<group>"; };
+		68ACD5DF211A743C006F70B0 /* Estructuras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estructuras.swift; sourceTree = "<group>"; };
+		68ACD5E1211A80C9006F70B0 /* Citas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Citas.storyboard; sourceTree = "<group>"; };
+		68ACD5E3211A81A0006F70B0 /* CitasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitasController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6837469C211919DB00FD374B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				683746D321191D3D00FD374B /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68374696211919DB00FD374B = {
+			isa = PBXGroup;
+			children = (
+				683746A1211919DB00FD374B /* Mi Salud */,
+				683746A0211919DB00FD374B /* Products */,
+				683746B421191C6D00FD374B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		683746A0211919DB00FD374B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6837469F211919DB00FD374B /* Mi Salud.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		683746A1211919DB00FD374B /* Mi Salud */ = {
+			isa = PBXGroup;
+			children = (
+				683746E62119266000FD374B /* Estructuras */,
+				683746E52119265300FD374B /* Database */,
+				683746E42119264E00FD374B /* Modelos */,
+				683746E32119264100FD374B /* Utilidades */,
+				683746E22119263200FD374B /* Celdas */,
+				683746E12119254D00FD374B /* Controladores */,
+				683746E02119252400FD374B /* Storyboards */,
+				683746A2211919DB00FD374B /* AppDelegate.swift */,
+				683746A9211919DF00FD374B /* Assets.xcassets */,
+				683746AE211919DF00FD374B /* Info.plist */,
+			);
+			path = "Mi Salud";
+			sourceTree = "<group>";
+		};
+		683746B421191C6D00FD374B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				683746D021191CBA00FD374B /* SQLite.swift.podspec */,
+				683746B721191C8600FD374B /* SQLite.xcodeproj */,
+				683746B521191C6E00FD374B /* SQLite.swift-master */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		683746B821191C8600FD374B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				683746C221191C8600FD374B /* SQLite.framework */,
+				683746C421191C8600FD374B /* SQLiteTests iOS.xctest */,
+				683746C621191C8600FD374B /* SQLite.framework */,
+				683746C821191C8600FD374B /* SQLiteTests Mac.xctest */,
+				683746CA21191C8600FD374B /* SQLite.framework */,
+				683746CC21191C8600FD374B /* SQLiteTests tvOS.xctest */,
+				683746CE21191C8600FD374B /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		683746E02119252400FD374B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				683746A6211919DB00FD374B /* IniciarSesion.storyboard */,
+				683746AB211919DF00FD374B /* LaunchScreen.storyboard */,
+				683746ED21194BD400FD374B /* MainMenu.storyboard */,
+				68ACD5E1211A80C9006F70B0 /* Citas.storyboard */,
+				686D6522211D52810049F67A /* Perfil.storyboard */,
+				686D6526211D57B60049F67A /* DatosGenerales.storyboard */,
+				686D652C211E47540049F67A /* Documentos.storyboard */,
+				686D653E211E5E040049F67A /* ConsultasMedicas.storyboard */,
+				686D6548211EB4830049F67A /* Recetas.storyboard */,
+				686A8129211F281B0095B423 /* Cuentas.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		683746E12119254D00FD374B /* Controladores */ = {
+			isa = PBXGroup;
+			children = (
+				686D6524211D53910049F67A /* PerfilController.swift */,
+				683746A4211919DB00FD374B /* IniciarSesionController.swift */,
+				683746E7211943A700FD374B /* RecuperarContraseniaController.swift */,
+				683746EF21194C0100FD374B /* MainMenuController.swift */,
+				68ACD5E3211A81A0006F70B0 /* CitasController.swift */,
+				686D651C211D36710049F67A /* ReservarCitasController.swift */,
+				686D651E211D46CA0049F67A /* DetallesCitaController.swift */,
+				686D6520211D4E400049F67A /* ContactanosController.swift */,
+				686D6528211D59C70049F67A /* DatosGeneralesController.swift */,
+				686D652A211D59E10049F67A /* CambiarContraseniaController.swift */,
+				686D652E211E47880049F67A /* DocumentosController.swift */,
+				686D6530211E488A0049F67A /* DetallesDocumentoController.swift */,
+				686D6538211E55280049F67A /* ExamenesLaboratorioController.swift */,
+				686D6540211E5F560049F67A /* ConsultasMedicasController.swift */,
+				686D6542211E5F6C0049F67A /* DetallesConsultasMedicasController.swift */,
+				686D654A211EB6870049F67A /* RecetasController.swift */,
+				686D654C211EB69A0049F67A /* DetallesRecetaController.swift */,
+				686A8135211F2CDF0095B423 /* CuentasController.swift */,
+				686A8138211F384C0095B423 /* DetallesCuentaController.swift */,
+				686A813A211F43260095B423 /* DetallesCuentaConsumoController.swift */,
+			);
+			path = Controladores;
+			sourceTree = "<group>";
+		};
+		683746E22119263200FD374B /* Celdas */ = {
+			isa = PBXGroup;
+			children = (
+				686D6512211C15CF0049F67A /* CitasViewCell.swift */,
+				686D6513211C15CF0049F67A /* CitasViewCell.xib */,
+				686D6534211E4D830049F67A /* DocumentosViewCell.swift */,
+				686D6535211E4D830049F67A /* DocumentosViewCell.xib */,
+				686D653A211E58540049F67A /* ExamenesLaboratorioViewCell.swift */,
+				686D653B211E58540049F67A /* ExamenesLaboratorioViewCell.xib */,
+				686D6544211E5FF50049F67A /* ConsultasMedicasViewCell.swift */,
+				686D6545211E5FF50049F67A /* ConsultasMedicasViewCell.xib */,
+				686D654E211EB8280049F67A /* RecetasViewCell.swift */,
+				686D654F211EB8280049F67A /* RecetasViewCell.xib */,
+				686D6552211EBDA00049F67A /* DetallesRecetaViewCell.swift */,
+				686D6553211EBDA00049F67A /* DetallesRecetaViewCell.xib */,
+				686A8131211F29280095B423 /* CuentasViewCell.swift */,
+				686A8132211F29280095B423 /* CuentasViewCell.xib */,
+				686A813C211F45E60095B423 /* DetallesCuentaConsumoViewCell.swift */,
+				686A813D211F45E60095B423 /* DetallesCuentaConsumoViewCell.xib */,
+			);
+			path = Celdas;
+			sourceTree = "<group>";
+		};
+		683746E32119264100FD374B /* Utilidades */ = {
+			isa = PBXGroup;
+			children = (
+				683746E92119486F00FD374B /* Utilidades.swift */,
+				683746EB2119495800FD374B /* Uris.swift */,
+			);
+			path = Utilidades;
+			sourceTree = "<group>";
+		};
+		683746E42119264E00FD374B /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				68ACD5DD211A73DD006F70B0 /* Modelos.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
+		683746E52119265300FD374B /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				68ACD5D5211A73AE006F70B0 /* Database.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		683746E62119266000FD374B /* Estructuras */ = {
+			isa = PBXGroup;
+			children = (
+				68ACD5DF211A743C006F70B0 /* Estructuras.swift */,
+			);
+			path = Estructuras;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6837469E211919DB00FD374B /* Mi Salud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 683746B1211919DF00FD374B /* Build configuration list for PBXNativeTarget "Mi Salud" */;
+			buildPhases = (
+				6837469B211919DB00FD374B /* Sources */,
+				6837469C211919DB00FD374B /* Frameworks */,
+				6837469D211919DB00FD374B /* Resources */,
+				683746D721191D3D00FD374B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				683746D621191D3D00FD374B /* PBXTargetDependency */,
+			);
+			name = "Mi Salud";
+			productName = "Mi Salud";
+			productReference = 6837469F211919DB00FD374B /* Mi Salud.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68374697211919DB00FD374B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = ITMED;
+				TargetAttributes = {
+					6837469E211919DB00FD374B = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = 6837469A211919DB00FD374B /* Build configuration list for PBXProject "Mi Salud" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68374696211919DB00FD374B;
+			productRefGroup = 683746A0211919DB00FD374B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 683746B821191C8600FD374B /* Products */;
+					ProjectRef = 683746B721191C8600FD374B /* SQLite.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6837469E211919DB00FD374B /* Mi Salud */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		683746C221191C8600FD374B /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 683746C121191C8600FD374B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		683746C421191C8600FD374B /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 683746C321191C8600FD374B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		683746C621191C8600FD374B /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 683746C521191C8600FD374B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		683746C821191C8600FD374B /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 683746C721191C8600FD374B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		683746CA21191C8600FD374B /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 683746C921191C8600FD374B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		683746CC21191C8600FD374B /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 683746CB21191C8600FD374B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		683746CE21191C8600FD374B /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 683746CD21191C8600FD374B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6837469D211919DB00FD374B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686D6549211EB4830049F67A /* Recetas.storyboard in Resources */,
+				683746EE21194BD400FD374B /* MainMenu.storyboard in Resources */,
+				686D6527211D57B60049F67A /* DatosGenerales.storyboard in Resources */,
+				686D6515211C15CF0049F67A /* CitasViewCell.xib in Resources */,
+				686A8134211F29280095B423 /* CuentasViewCell.xib in Resources */,
+				686A812A211F281B0095B423 /* Cuentas.storyboard in Resources */,
+				686D6551211EB8280049F67A /* RecetasViewCell.xib in Resources */,
+				686D6537211E4D830049F67A /* DocumentosViewCell.xib in Resources */,
+				686D653F211E5E040049F67A /* ConsultasMedicas.storyboard in Resources */,
+				683746AD211919DF00FD374B /* LaunchScreen.storyboard in Resources */,
+				686D6555211EBDA00049F67A /* DetallesRecetaViewCell.xib in Resources */,
+				683746AA211919DF00FD374B /* Assets.xcassets in Resources */,
+				686D653D211E58540049F67A /* ExamenesLaboratorioViewCell.xib in Resources */,
+				686D6523211D52810049F67A /* Perfil.storyboard in Resources */,
+				686A813F211F45E60095B423 /* DetallesCuentaConsumoViewCell.xib in Resources */,
+				686D6547211E5FF50049F67A /* ConsultasMedicasViewCell.xib in Resources */,
+				68ACD5E2211A80C9006F70B0 /* Citas.storyboard in Resources */,
+				683746A8211919DB00FD374B /* IniciarSesion.storyboard in Resources */,
+				686D652D211E47540049F67A /* Documentos.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6837469B211919DB00FD374B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686D6546211E5FF50049F67A /* ConsultasMedicasViewCell.swift in Sources */,
+				686A813B211F43260095B423 /* DetallesCuentaConsumoController.swift in Sources */,
+				686D6531211E488A0049F67A /* DetallesDocumentoController.swift in Sources */,
+				686D654D211EB69A0049F67A /* DetallesRecetaController.swift in Sources */,
+				683746A5211919DB00FD374B /* IniciarSesionController.swift in Sources */,
+				683746A3211919DB00FD374B /* AppDelegate.swift in Sources */,
+				683746E8211943A700FD374B /* RecuperarContraseniaController.swift in Sources */,
+				68ACD5DE211A73DD006F70B0 /* Modelos.swift in Sources */,
+				686D652B211D59E10049F67A /* CambiarContraseniaController.swift in Sources */,
+				68ACD5E4211A81A0006F70B0 /* CitasController.swift in Sources */,
+				686D6521211D4E400049F67A /* ContactanosController.swift in Sources */,
+				683746EA2119486F00FD374B /* Utilidades.swift in Sources */,
+				686A8139211F384C0095B423 /* DetallesCuentaController.swift in Sources */,
+				683746EC2119495800FD374B /* Uris.swift in Sources */,
+				68ACD5D6211A73AE006F70B0 /* Database.swift in Sources */,
+				686D6536211E4D830049F67A /* DocumentosViewCell.swift in Sources */,
+				686D6554211EBDA00049F67A /* DetallesRecetaViewCell.swift in Sources */,
+				686A813E211F45E60095B423 /* DetallesCuentaConsumoViewCell.swift in Sources */,
+				686D652F211E47890049F67A /* DocumentosController.swift in Sources */,
+				686D6541211E5F560049F67A /* ConsultasMedicasController.swift in Sources */,
+				686D654B211EB6870049F67A /* RecetasController.swift in Sources */,
+				686D651F211D46CA0049F67A /* DetallesCitaController.swift in Sources */,
+				686D6550211EB8280049F67A /* RecetasViewCell.swift in Sources */,
+				686A8133211F29280095B423 /* CuentasViewCell.swift in Sources */,
+				686D6543211E5F6C0049F67A /* DetallesConsultasMedicasController.swift in Sources */,
+				686A8136211F2CDF0095B423 /* CuentasController.swift in Sources */,
+				686D6514211C15CF0049F67A /* CitasViewCell.swift in Sources */,
+				686D653C211E58540049F67A /* ExamenesLaboratorioViewCell.swift in Sources */,
+				683746F021194C0100FD374B /* MainMenuController.swift in Sources */,
+				686D651D211D36710049F67A /* ReservarCitasController.swift in Sources */,
+				68ACD5E0211A743C006F70B0 /* Estructuras.swift in Sources */,
+				686D6529211D59C70049F67A /* DatosGeneralesController.swift in Sources */,
+				686D6525211D53910049F67A /* PerfilController.swift in Sources */,
+				686D6539211E55280049F67A /* ExamenesLaboratorioController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		683746D621191D3D00FD374B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = 683746D521191D3D00FD374B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		683746A6211919DB00FD374B /* IniciarSesion.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				683746A7211919DB00FD374B /* Base */,
+			);
+			name = IniciarSesion.storyboard;
+			sourceTree = "<group>";
+		};
+		683746AB211919DF00FD374B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				683746AC211919DF00FD374B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		683746AF211919DF00FD374B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		683746B0211919DF00FD374B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		683746B2211919DF00FD374B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XSJWG25XUC;
+				INFOPLIST_FILE = "Mi Salud/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.misaludapps.Mi-Salud";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		683746B3211919DF00FD374B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XSJWG25XUC;
+				INFOPLIST_FILE = "Mi Salud/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.misaludapps.Mi-Salud";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6837469A211919DB00FD374B /* Build configuration list for PBXProject "Mi Salud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				683746AF211919DF00FD374B /* Debug */,
+				683746B0211919DF00FD374B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		683746B1211919DF00FD374B /* Build configuration list for PBXNativeTarget "Mi Salud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				683746B2211919DF00FD374B /* Debug */,
+				683746B3211919DF00FD374B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68374697211919DB00FD374B /* Project object */;
+}

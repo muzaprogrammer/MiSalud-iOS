@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Iniciar Sesion Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="IniciarSesionController" id="BYZ-38-t0r" customClass="IniciarSesionController" customModule="Mi_Salud" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="OD5-X3-m4o">
+                                <rect key="frame" x="78" y="162" width="215" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="emailField" translatesAutoresizingMaskIntoConstraints="NO" id="hac-Hd-EuM">
+                                <rect key="frame" x="40" y="372" width="299" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="passwordField" translatesAutoresizingMaskIntoConstraints="NO" id="edI-Zz-JGY">
+                                <rect key="frame" x="40" y="450" width="299" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v32-Qb-aJw">
+                                <rect key="frame" x="40" y="559" width="299" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="ingresarButton"/>
+                                <connections>
+                                    <action selector="evento_iniciar_sesion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XZ0-Sc-kfl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUB-OB-c4p">
+                                <rect key="frame" x="67" y="732" width="241" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="EiP-I4-Gy7"/>
+                                </constraints>
+                                <state key="normal" title="Olvidaste tu contraseña? Click aqui">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OxF-VB-Ebg" kind="show" id="y7R-XH-r6H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TUB-OB-c4p" secondAttribute="bottom" constant="25" id="CJ8-Y8-uQv"/>
+                            <constraint firstItem="TUB-OB-c4p" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ng4-ke-TUq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Xtl-Wa-Ldj" appends="YES" id="hnu-hw-OoD"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="contrasenia_field" destination="edI-Zz-JGY" id="Vro-0X-vaW"/>
+                        <outlet property="correo_electronico_field" destination="hac-Hd-EuM" id="3Sx-w8-dCd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Xtl-Wa-Ldj">
+                    <connections>
+                        <action selector="evento_click:" destination="BYZ-38-t0r" id="YML-Do-W9p"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="30.434782608695656" y="31.793478260869566"/>
+        </scene>
+        <!--Recuperar Contrasenia Controller-->
+        <scene sceneID="QzG-lF-Cfw">
+            <objects>
+                <viewController storyboardIdentifier="RecuperarContraseniaController" id="OxF-VB-Ebg" customClass="RecuperarContraseniaController" customModule="Mi_Salud" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v00-mb-3ya">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="iE5-om-cVr">
+                                <rect key="frame" x="78" y="115" width="215" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="emailField" translatesAutoresizingMaskIntoConstraints="NO" id="jSr-Yu-ia0">
+                                <rect key="frame" x="40" y="478" width="299" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4L-hX-lPv">
+                                <rect key="frame" x="156.66666666666666" y="732" width="62" height="30"/>
+                                <state key="normal" title="Regresar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="29g-Xo-j4F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrL-ep-vZa">
+                                <rect key="frame" x="40" y="601" width="299" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="enviarButton"/>
+                                <connections>
+                                    <action selector="evento_enviar_correo_electronico:" destination="OxF-VB-Ebg" eventType="touchUpInside" id="hcG-hK-aUx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¿Olvidaste tu contraseña?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zjb-4X-uM0">
+                                <rect key="frame" x="40" y="300" width="299" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Solo necesitamos su correo electrónico registrado para enviarle instrucciones de restablecimiento de contraseña" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VM4-xb-SUE">
+                                <rect key="frame" x="44" y="362" width="288" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="x4L-hX-lPv" firstAttribute="centerX" secondItem="McV-Yd-5ho" secondAttribute="centerX" id="91L-YJ-ix5"/>
+                            <constraint firstItem="McV-Yd-5ho" firstAttribute="bottom" secondItem="x4L-hX-lPv" secondAttribute="bottom" constant="16" id="zi3-7T-6s8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="McV-Yd-5ho"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Yfw-HR-N34" appends="YES" id="vrR-e5-t9H"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="correo_electronico_field" destination="jSr-Yu-ia0" id="rQc-jQ-B1v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZS-eT-XmT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Yfw-HR-N34">
+                    <connections>
+                        <action selector="evento_click:" destination="OxF-VB-Ebg" id="JBu-eJ-asS"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1038.75" y="30"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="emailField" width="299" height="38"/>
+        <image name="enviarButton" width="299" height="38"/>
+        <image name="ingresarButton" width="299" height="38"/>
+        <image name="logo" width="215" height="107"/>
+        <image name="passwordField" width="299" height="38"/>
+    </resources>
+</document>
